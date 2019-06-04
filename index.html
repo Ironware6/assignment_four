@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Assignment 4</title>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>Assignment 4</h1>
+        <p>Make your own grid </p>
+    </div>
+    <div class="col-4 mx-auto">
+    <select id="colors" onchange="myFunction(this.options[this.selectedIndex].value);">
+        
+        <option value="aqua">Aqua</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="DeepPink">Deep Pink</option>
+        <option value="orange">Orange</option>
+        <option value="SpringGreen">Spring Green</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="white">Clear</option>
+    </select>
+
+
+    <br>
+    <br>
+
+    <form id="table-manipulator" name="table-manipulator">
+        <input type="submit" value="Add Column" onclick="appendCol()">
+        <input type="submit" value="Remove Column" onclick="deleteCols()">
+        <br>
+        <input type="submit" value="Add Row" onclick="appendRow()">
+        <input type="submit" value="Remove Row" onclick="deleteRows()">
+        <br>
+    </form>
+    <table id="table" style="border: 1px solid black;">
+    </table>
+
+    <script type="text/javascript" src="index.js"></script>
+</div>
+</body>
+
+</html>
